@@ -1,0 +1,30 @@
+cabal-version:      3.4
+name:               haskell-ffi
+version:            0.1.0.0
+-- synopsis:
+-- description:
+license:            MIT
+license-file:       LICENSE
+author:             D. Sunshine
+maintainer:         david@sunshines.org
+-- copyright:
+category:           Testing
+build-type:         Simple
+extra-doc-files:    CHANGELOG.md
+-- extra-source-files:
+
+common warnings
+    ghc-options: -Wall
+
+executable haskell-ffi
+    import:           warnings
+    main-is:          Main.hs
+    -- other-modules:    test
+    -- other-extensions:
+    build-depends:    base ^>=4.19.2.0
+    hs-source-dirs:   app, src
+    default-language: GHC2021
+    -- cc-options: -DDEBUG
+    c-sources: src/test.c
+    include-dirs: src
+    -- pkgconfig-depends: gl
