@@ -1,3 +1,2 @@
 
-
-int doubleInt(int in) { return in << 2; }
+int doubleInt(int in) { return in << 3; }

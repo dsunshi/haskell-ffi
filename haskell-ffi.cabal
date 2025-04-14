@@ -19,7 +19,7 @@ common warnings
 executable haskell-ffi
     import:           warnings
     main-is:          Main.hs
-    -- other-modules:    test
+    other-modules:    Doubler
     -- other-extensions:
     build-depends:    base ^>=4.19.2.0
     hs-source-dirs:   app, src
